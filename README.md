@@ -11,4 +11,4 @@ Figure R7: The energy landscape of the product states at $V/\Delta_l \approx 2$ 
 Figure R8: Similar to Figure R7, but the Rabi frequency $\mathrm{\Omega}$ is slowly ramped up in $1\,\mu\mathrm{s}$.
 
 ## Animations
-GitHub Pages viewer: https://xiao97wang.github.io/animations-for-Probing-false-vacuum-decay-and-bubble-nucleation-in-a-Rydberg-atom-array-/
+GitHub Pages viewer: https://xiao97wang.github.io/animations-for-Probing-FVD-Rydberg/
