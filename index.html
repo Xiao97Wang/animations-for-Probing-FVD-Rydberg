@@ -14,24 +14,74 @@
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; line-height: 1.45; }
-    h1 { margin: 0 0 10px; font-size: 22px; }
-    figure { margin: 0 0 18px; padding: 14px; border: 1px solid #ddd; border-radius: 12px; }
-    img { width: 100%; max-width: 980px; height: auto; border-radius: 10px; background: #fafafa; display: block; }
-    figcaption { margin-top: 10px; font-size: 14px; color: #222; max-width: 980px; white-space: pre-wrap; }
+    /* Page-like layout */
+    html, body { background: #fff; color: #000; }
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .page {
+      max-width: 820px;   /* "paper" text block width */
+      margin: 0 auto;
+    }
+
+    /* Minimal heading (optional; keep if you want) */
+    h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 22px;
+      text-align: left;
+    }
+
+    /* Figures: centred, no card border */
+    figure {
+      margin: 0 0 56px;
+      padding: 0;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 720px;   /* keep figure narrower than text block (LaTeX-like) */
+      height: auto;
+      background: #fff;
+    }
+
+    /* Caption styling: LaTeX-ish */
+    figcaption {
+      margin: 18px auto 0;
+      max-width: 820px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+      text-justify: inter-word;
+      white-space: normal; /* closer to PDF paragraph layout */
+    }
+
+    /* Slight extra gap between the two figures if you want it */
+    .gap { margin-top: 10px; }
   </style>
 </head>
+
 <body>
-  <h1>Animations for “Probing false vacuum decay and bubble nucleation in a Rydberg atom array”</h1>
+  <div class="page">
+    <h1>Animations for “Probing false vacuum decay and bubble nucleation in a Rydberg atom array”</h1>
 
-  <figure>
-    <img src="resonance_quench_evolution_s.gif" alt="Figure R7 animation" />
-    <figcaption>Figure R7: The energy landscape of the product states at $V/\Delta_l\ \approx\ 2$ (the resonance condition for $L=2\ bubbles$). Each blue dot in the landscape represents a manifold of product states, grouped by their Hamming distance from the |Néel⟩ state and their relative static energy $E/V$. The area of each dot is proportional to the occupation probability of the state manifold at different times $t$ after a quench ($\mathrm{\Omega}/2\pi\ =1.8\ MHz$).</figcaption>
-  </figure>
+    <figure>
+      <img src="resonance_quench_evolution_s.gif" alt="Figure R7 animation" />
+      <figcaption>
+Figure R7: The energy landscape of the product states at $V/\Delta_l\ \approx\ 2$ (the resonance condition for $L=2\ bubbles$). Each blue dot in the landscape represents a manifold of product states, grouped by their Hamming distance from the |Néel⟩ state and their relative static energy $E/V$. The area of each dot is proportional to the occupation probability of the state manifold at different times $t$ after a quench ($\mathrm{\Omega}/2\pi\ =1.8\ MHz$).
+      </figcaption>
+    </figure>
 
-  <figure>
-    <img src="resonance_ramp_evolution_s.gif" alt="Figure R8 animation" />
-    <figcaption>Figure R8: Similar to figure R7, but the Rabi frequency $\mathrm{\Omega}$ is slowly ramped up in $1\ \mu s$.</figcaption>
-  </figure>
+    <figure class="gap">
+      <img src="resonance_ramp_evolution_s.gif" alt="Figure R8 animation" />
+      <figcaption>
+Figure R8: Similar to figure R7, but the Rabi frequency $\mathrm{\Omega}$ is slowly ramped up in $1\ \mu s$.
+      </figcaption>
+    </figure>
+  </div>
 </body>
 </html>
