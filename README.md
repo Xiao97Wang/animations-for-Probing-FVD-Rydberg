@@ -6,3 +6,11 @@ Figure R8: Similar to Figure R7, but the Rabi frequency $\mathrm{\Omega}$ is slo
 
 ## Animations
 GitHub Pages viewer: https://xiao97wang.github.io/animations-for-Probing-false-vacuum-decay-and-bubble-nucleation-in-a-Rydberg-atom-array-/
+
+## Animations (inline preview)
+
+**Figure R7 (quench protocol)**  
+![Figure R7 animation](resonance_quench_evolution_s.gif)
+
+**Figure R8 (ramp protocol)**  
+![Figure R8 animation](resonance_ramp_evolution_s.gif)
